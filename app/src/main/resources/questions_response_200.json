@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "tags": [
+        "bulk-cooking",
+        "simmer"
+      ],
+      "owner": {
+        "account_id": 2618090,
+        "reputation": 38092,
+        "user_id": 20413,
+        "user_type": "registered",
+        "accept_rate": 100,
+        "profile_image": "https://i.stack.imgur.com/QRtJe.jpg?s=256&g=1",
+        "display_name": "Chris H",
+        "link": "https://cooking.stackexchange.com/users/20413/chris-h"
+      },
+      "is_answered": true,
+      "view_count": 748,
+      "answer_count": 3,
+      "score": 9,
+      "last_activity_date": 1649398145,
+      "creation_date": 1649328949,
+      "last_edit_date": 1649335935,
+      "question_id": 120264,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://cooking.stackexchange.com/questions/120264/automated-stirring-in-a-domestic-kitchen",
+      "title": "Automated stirring in a domestic kitchen"
+    },
+    {
+      "tags": [
+        "cleaning"
+      ],
+      "owner": {
+        "account_id": 480116,
+        "reputation": 121,
+        "user_id": 87741,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/a6b495308482759d359eb97636fdccb0?s=256&d=identicon&r=PG",
+        "display_name": "allo",
+        "link": "https://cooking.stackexchange.com/users/87741/allo"
+      },
+      "is_answered": true,
+      "view_count": 1361,
+      "answer_count": 4,
+      "score": 2,
+      "last_activity_date": 1649373544,
+      "creation_date": 1600690091,
+      "last_edit_date": 1601401438,
+      "question_id": 110802,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://cooking.stackexchange.com/questions/110802/how-to-clean-silicone-ice-cube-forms",
+      "title": "How to clean silicone ice cube forms?"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 10000,
+  "quota_remaining": 9998
+}

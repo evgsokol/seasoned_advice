@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.evgeniasokolova.chefsadvices.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="question_id"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="text"
+            app:argType="string" />
+        <argument
+            android:name="isFavorite"
+            app:argType="boolean"/>
+        <action
+            android:id="@+id/goToDetail"
+            app:destination="@id/detailFragment"/>
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"/>-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.evgeniasokolova.chefsadvices.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_favourite"
+        android:name="com.evgeniasokolova.chefsadvices.ui.favorite.FavoriteFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_navigation_favourite_to_detailFragment"
+            app:destination="@id/detailFragment" />
+
+        <argument
+            android:name="question_id"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.evgeniasokolova.chefsadvices.ui.detail.DetailFragment"
+        android:label="@string/title_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="question_id"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="text"
+            app:argType="string" />
+        <argument
+            android:name="isFavorite"
+            app:argType="boolean"/>
+    </fragment>
+</navigation>
